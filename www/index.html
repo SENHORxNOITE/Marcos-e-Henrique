@@ -17,19 +17,47 @@
     </script>
 </head>
 <body>
-    <center>
-        <br><br><br><br><br><br><br><br>
-        <h1>CALCULO DE IMC</h1>
-        <br><br><br>
-        <h3>Digite aqui Sua Altura</h3>
-    <input type="number" id="altura"><br><br><br>
-    <h3>Digite aqui o seu peso</h3>
-    <input type="number" id="peso"><br><br><br><br><br><br>
-    <input type="button"  class="btn btn-success" value="CALCULAR" onclick="calcularconsumo()">
+<div class="card"></div>
+    <div class="container">
+    <h1>CALCULO DE CONSUMO</h1>
+<div class="fundo">
+    <form class="container">
+        
+ 
+ <h3 class="carro">Calcule o consumo de gasolina</h3>
 
-    <p id="consumo">
-    <h1 id="nome"></h1>
-    </center>
+	<input type="number" placeholder="Insira a kmm percorrida" id="km">
+    <input type="number" placeholder="Insira o consumo de gasolina" id="gas">
+    <button onclick="calcularconsumo()">Calcular</button>
+    <br>
+    <div class= "linha">
+      
+    <span id="consumo"></span>
+           <span>
+    <h3 style="font-family= Arial">KM/L</h3>
+           </span>
+    </div>
+    </form>
+       
+           <table border="10px">
+  <tr id="extremamente">
+    <td><=20km/l | Extremamente Econômico</td>
+
+  </tr>
+  <tr id="economico">
+    <td> <=12km/l---->20km/l | Econômico</td>
+
+  </tr>
+  <tr id="normal">
+    <td> <=8km/l---->12km/l | Normal</td>
+
+  </tr>
+  <tr id="alto">
+    <td>>=8km/l | Alto consumo</td>
+
+  </tr>
+</table>
+</div>
 	
 </body>
-</html>
+</html> 
